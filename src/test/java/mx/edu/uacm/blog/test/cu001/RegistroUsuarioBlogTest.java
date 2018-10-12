@@ -20,6 +20,8 @@ public class RegistroUsuarioBlogTest {
 
 	  @Before
 	  public void setUp() throws Exception {
+		  System.setProperty("webdriver.gecko.driver", 
+				  System.getProperty("user.di")+"/geckoDriver/geckodriver.exe");
 	    driver = new FirefoxDriver();
 	    baseUrl = "https://www.katalon.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
